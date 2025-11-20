@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  trainer:
+    build: .
+    volumes:
+      - ./:/app
+    command: bash -c "python train.py"
